@@ -1,7 +1,7 @@
 ---
 title: Crear Presentaciones HTLM usando MarckDown
 author: Jose Miguel Miranda Sanabria
-date: Diciembre-2019
+date: 10/12/2019
 output:
   ioslides_presentation:
     widescreen: true

@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <meta name="author" content="Jose Miguel Miranda Sanabria">
+  <title>Crear Presentaciones HTLM usando MarckDown</title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="../reveal.js/css/reset.css">
+  <link rel="stylesheet" href="../reveal.js/css/reveal.css">
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+  </style>
+  <link rel="stylesheet" href="../reveal.js/css/theme/jmms-white.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? '../reveal.js/css/print/pdf.css' : '../reveal.js/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="../reveal.js/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<section id="title-slide">
+  <h1 class="title">Crear Presentaciones HTLM usando MarckDown</h1>
+  <p class="author">Jose Miguel Miranda Sanabria</p>
+  <p class="date">Diciembre-2019</p>
+</section>
+
+<section><section id="presentaciones-markdown" class="title-slide slide level1"><h1 class="smaller">Presentaciones MarkDown</h1></section>
+<section id="herramientas" class="slide level2">
+<h2>Herramientas</h2>
+<h3 id="reveal.js">Reveal.js</h3>
+<p>Framwork para hacer presentaciones en html muy faciles y apariencia profesional.</p>
+<h3 id="pandoc">Pandoc</h3>
+<p>Herramienta que permite tranformar de culaquier formato a cualquier formato</p>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section><section id="instalación" class="title-slide slide level1"><h1>Instalación</h1><p>Sobre <strong>MacOS Mojave 10.14.6</strong></p>
+<p>Instalaremos todo lo necesario</p></section>
+<section id="pandoc-1" class="slide level2">
+<h2>Pandoc</h2>
+<p>Instalamos Pandoc usaremos homebrew</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1"></a><span class="co"># Para la Instalación</span></span>
+<span id="cb1-2"><a href="#cb1-2"></a><span class="ex">brew</span> install pandoc</span>
+<span id="cb1-3"><a href="#cb1-3"></a></span>
+<span id="cb1-4"><a href="#cb1-4"></a><span class="co"># Para la Actualización</span></span>
+<span id="cb1-5"><a href="#cb1-5"></a><span class="ex">brew</span> upgrade pandoc</span></code></pre></div>
+</section>
+<section id="nodejs" class="slide level2">
+<h2>NodeJS</h2>
+<p>Instalamos NodeJS con <a href="https://github.com/hokaccha/nodebrew">nodebrew</a></p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1"></a></span>
+<span id="cb2-2"><a href="#cb2-2"></a><span class="co"># Comprobamos si está instalado y que version tenemos</span></span>
+<span id="cb2-3"><a href="#cb2-3"></a>$ <span class="fu">which</span> node</span>
+<span id="cb2-4"><a href="#cb2-4"></a><span class="ex">node</span> not found  </span>
+<span id="cb2-5"><a href="#cb2-5"></a></span>
+<span id="cb2-6"><a href="#cb2-6"></a><span class="co"># Instalamos nodebrew</span></span>
+<span id="cb2-7"><a href="#cb2-7"></a>$ <span class="ex">brew</span> install nodebrew</span>
+<span id="cb2-8"><a href="#cb2-8"></a>==<span class="op">&gt;</span> <span class="ex">Downloading</span> https://github.com/../v1.0.1.tar.gz</span>
+<span id="cb2-9"><a href="#cb2-9"></a>==<span class="op">&gt;</span> <span class="ex">Downloadin</span></span>
+<span id="cb2-10"><a href="#cb2-10"></a><span class="ex">....</span></span>
+<span id="cb2-11"><a href="#cb2-11"></a></span>
+<span id="cb2-12"><a href="#cb2-12"></a><span class="co"># Comprobamos la version</span></span>
+<span id="cb2-13"><a href="#cb2-13"></a>$ <span class="ex">nodebrew</span> -v</span>
+<span id="cb2-14"><a href="#cb2-14"></a><span class="ex">nodebrew</span> 1.0.1</span>
+<span id="cb2-15"><a href="#cb2-15"></a></span>
+<span id="cb2-16"><a href="#cb2-16"></a><span class="ex">Usage</span>:</span>
+<span id="cb2-17"><a href="#cb2-17"></a>    <span class="ex">nodebrew</span> help                         Show ..</span>
+<span id="cb2-18"><a href="#cb2-18"></a>    <span class="ex">nodebrew</span> install <span class="op">&lt;</span>version<span class="op">&gt;</span>            Download..</span>
+<span id="cb2-19"><a href="#cb2-19"></a><span class="ex">...</span></span>
+<span id="cb2-20"><a href="#cb2-20"></a></span>
+<span id="cb2-21"><a href="#cb2-21"></a><span class="co"># Añadimos  en el path nodebrew</span></span>
+<span id="cb2-22"><a href="#cb2-22"></a>$ <span class="bu">echo</span> <span class="st">&#39;export PATH=$HOME/.nodebrew/current/bin:$PATH&#39;</span>\</span>
+<span id="cb2-23"><a href="#cb2-23"></a>        <span class="op">&gt;&gt;</span> ~/.zprofile</span>
+<span id="cb2-24"><a href="#cb2-24"></a></span>
+<span id="cb2-25"><a href="#cb2-25"></a><span class="co"># Cargamos el perfil zbash</span></span>
+<span id="cb2-26"><a href="#cb2-26"></a>$ <span class="bu">source</span> ~/.zprofile</span>
+<span id="cb2-27"><a href="#cb2-27"></a></span>
+<span id="cb2-28"><a href="#cb2-28"></a><span class="co"># Versiones de node disponibles con nodebrew</span></span>
+<span id="cb2-29"><a href="#cb2-29"></a>$ <span class="ex">nodebrew</span> ls-remote</span>
+<span id="cb2-30"><a href="#cb2-30"></a><span class="ex">v0.0.1</span>    v0.0.2    v0.0.3    v0.0.4    v0.0.5</span>
+<span id="cb2-31"><a href="#cb2-31"></a></span>
+<span id="cb2-32"><a href="#cb2-32"></a><span class="ex">v0.1.0</span>    v0.1.1    v0.1.2    v0.1.3    v0.1.4</span>
+<span id="cb2-33"><a href="#cb2-33"></a></span>
+<span id="cb2-34"><a href="#cb2-34"></a></span>
+<span id="cb2-35"><a href="#cb2-35"></a><span class="co"># Configurar NodeBrew</span></span>
+<span id="cb2-36"><a href="#cb2-36"></a>$ <span class="ex">nodebrew</span> setup</span>
+<span id="cb2-37"><a href="#cb2-37"></a></span>
+<span id="cb2-38"><a href="#cb2-38"></a><span class="co"># Instalar la version estable e node</span></span>
+<span id="cb2-39"><a href="#cb2-39"></a>$ <span class="ex">nodebrew</span> install-binary stable</span>
+<span id="cb2-40"><a href="#cb2-40"></a></span>
+<span id="cb2-41"><a href="#cb2-41"></a></span>
+<span id="cb2-42"><a href="#cb2-42"></a><span class="co"># Versiones instaladas</span></span>
+<span id="cb2-43"><a href="#cb2-43"></a>$ <span class="ex">nodebrew</span> ls</span>
+<span id="cb2-44"><a href="#cb2-44"></a><span class="ex">v10.15.1</span></span>
+<span id="cb2-45"><a href="#cb2-45"></a></span>
+<span id="cb2-46"><a href="#cb2-46"></a></span>
+<span id="cb2-47"><a href="#cb2-47"></a><span class="co"># activamos la version de node que queremos usar</span></span>
+<span id="cb2-48"><a href="#cb2-48"></a>$ <span class="ex">nodebrew</span> use v10.15.1</span>
+<span id="cb2-49"><a href="#cb2-49"></a></span>
+<span id="cb2-50"><a href="#cb2-50"></a><span class="co"># Comprobamos</span></span>
+<span id="cb2-51"><a href="#cb2-51"></a>$ <span class="ex">node</span> -v</span>
+<span id="cb2-52"><a href="#cb2-52"></a><span class="ex">v10.15.1</span></span></code></pre></div>
+</section>
+<section id="clonar-reveal.js" class="slide level2">
+<h2>Clonar reveal.js</h2>
+<div class="sourceCode" id="cb3"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1"></a>$ <span class="bu">cd</span> your/work/directory</span>
+<span id="cb3-2"><a href="#cb3-2"></a></span>
+<span id="cb3-3"><a href="#cb3-3"></a>$ <span class="fu">git</span> clone https://github.com/hakimel/reveal.js.git</span>
+<span id="cb3-4"><a href="#cb3-4"></a><span class="ex">Cloning</span> into <span class="st">&#39;reveal.js&#39;</span>...</span>
+<span id="cb3-5"><a href="#cb3-5"></a><span class="ex">remote</span>: Enumerating objects: 11068, done.</span>
+<span id="cb3-6"><a href="#cb3-6"></a><span class="ex">...</span></span></code></pre></div>
+</section>
+<section id="fin-instalación." class="slide level2">
+<h2>Fin Instalación.</h2>
+</section>
+<section id="referencias" class="slide level2">
+<h2>Referencias</h2>
+<ul>
+<li><h2 id="set-up-to-convert-a-markdown-file-to-reveal.js-slides-by-pandoc"><a href="https://dev.to/berry_clione/set-up-to-convert-a-markdown-file-to-revealjs-slides-by-pandoc-58n5">Set-up to convert a markdown file to reveal.js slides by pandoc</a></h2></li>
+</ul>
+</section></section>
+<section><section id="quickstart" class="title-slide slide level1"><h1>QuickStart</h1></section>
+<section id="crear-fichero-md" class="slide level2">
+<h2>Crear fichero MD</h2>
+<p>Creamos un fichero md en el directorio de trabajo</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode markdown"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1"></a></span>
+<span id="cb4-2"><a href="#cb4-2"></a>% Title</span>
+<span id="cb4-3"><a href="#cb4-3"></a>% Name</span>
+<span id="cb4-4"><a href="#cb4-4"></a>% yyyy/mm/dd</span>
+<span id="cb4-5"><a href="#cb4-5"></a></span>
+<span id="cb4-6"><a href="#cb4-6"></a><span class="fu"># Header1</span></span>
+<span id="cb4-7"><a href="#cb4-7"></a></span>
+<span id="cb4-8"><a href="#cb4-8"></a>---</span>
+<span id="cb4-9"><a href="#cb4-9"></a></span>
+<span id="cb4-10"><a href="#cb4-10"></a><span class="fu">### Header3</span></span>
+<span id="cb4-11"><a href="#cb4-11"></a></span>
+<span id="cb4-12"><a href="#cb4-12"></a><span class="st">- foo</span></span>
+<span id="cb4-13"><a href="#cb4-13"></a><span class="st">- bar</span></span>
+<span id="cb4-14"><a href="#cb4-14"></a><span class="st">- foobar</span></span>
+<span id="cb4-15"><a href="#cb4-15"></a></span>
+<span id="cb4-16"><a href="#cb4-16"></a>---</span>
+<span id="cb4-17"><a href="#cb4-17"></a></span>
+<span id="cb4-18"><a href="#cb4-18"></a><span class="fu">### header</span></span>
+<span id="cb4-19"><a href="#cb4-19"></a></span>
+<span id="cb4-20"><a href="#cb4-20"></a><span class="st">1. foo</span></span>
+<span id="cb4-21"><a href="#cb4-21"></a><span class="st">1. bar</span></span>
+<span id="cb4-22"><a href="#cb4-22"></a><span class="st">1. baz</span></span>
+<span id="cb4-23"><a href="#cb4-23"></a></span>
+<span id="cb4-24"><a href="#cb4-24"></a><span class="fu"># HEADER</span></span>
+<span id="cb4-25"><a href="#cb4-25"></a></span>
+<span id="cb4-26"><a href="#cb4-26"></a>---</span>
+<span id="cb4-27"><a href="#cb4-27"></a></span>
+<span id="cb4-28"><a href="#cb4-28"></a>_foo_</span>
+<span id="cb4-29"><a href="#cb4-29"></a></span>
+<span id="cb4-30"><a href="#cb4-30"></a>__bar__</span>
+<span id="cb4-31"><a href="#cb4-31"></a></span>
+<span id="cb4-32"><a href="#cb4-32"></a>___baz___</span>
+<span id="cb4-33"><a href="#cb4-33"></a></span>
+<span id="cb4-34"><a href="#cb4-34"></a><span class="ot">[foobar_link](https://github.com/hakimel/reveal.js/#full-setup)</span></span>
+<span id="cb4-35"><a href="#cb4-35"></a></span>
+<span id="cb4-36"><a href="#cb4-36"></a>&gt;<span class="dt"> foo bar</span>  </span>
+<span id="cb4-37"><a href="#cb4-37"></a><span class="dt">&gt; baz</span></span></code></pre></div>
+</section>
+<section id="estructura-directorio" class="slide level2">
+<h2>Estructura Directorio</h2>
+<div class="sourceCode" id="cb5"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1"></a>$ <span class="bu">cd</span> your/work/directory</span>
+<span id="cb5-2"><a href="#cb5-2"></a>$ <span class="ex">tree</span></span>
+<span id="cb5-3"><a href="#cb5-3"></a><span class="ex">.</span></span>
+<span id="cb5-4"><a href="#cb5-4"></a>├── <span class="ex">reveal.js</span></span>
+<span id="cb5-5"><a href="#cb5-5"></a>│       └<span class="ex">--...</span></span>
+<span id="cb5-6"><a href="#cb5-6"></a>└── <span class="ex">test.md</span></span></code></pre></div>
+</section>
+<section id="ejecutamos-la-transformación" class="slide level2">
+<h2>Ejecutamos la Transformación</h2>
+<div class="sourceCode" id="cb6"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1"></a><span class="co"># Opciones que nos interesan cambiar</span></span>
+<span id="cb6-2"><a href="#cb6-2"></a><span class="bu">export</span> <span class="va">THEME=</span>black</span>
+<span id="cb6-3"><a href="#cb6-3"></a><span class="bu">export</span> <span class="va">SLIDE_LEVEL=</span>1 <span class="va">d</span></span>
+<span id="cb6-4"><a href="#cb6-4"></a></span>
+<span id="cb6-5"><a href="#cb6-5"></a><span class="co">#Ejecutamos la transformación</span></span>
+<span id="cb6-6"><a href="#cb6-6"></a>$ <span class="ex">pandoc</span> -s -t revealjs  \</span>
+<span id="cb6-7"><a href="#cb6-7"></a>            --variable transition=linear \</span>
+<span id="cb6-8"><a href="#cb6-8"></a>            -V theme=<span class="va">${THEME}</span> \</span>
+<span id="cb6-9"><a href="#cb6-9"></a>            -V revealjs-url=<span class="st">&quot;reveal.js&quot;</span> \</span>
+<span id="cb6-10"><a href="#cb6-10"></a>            --slide-level=<span class="va">${SLIDE_LEVEL}</span> \</span>
+<span id="cb6-11"><a href="#cb6-11"></a>            -o test.html \</span>
+<span id="cb6-12"><a href="#cb6-12"></a>            test.md</span>
+<span id="cb6-13"><a href="#cb6-13"></a></span>
+<span id="cb6-14"><a href="#cb6-14"></a><span class="co"># abrimos el fichero que se acaba de generar</span></span>
+<span id="cb6-15"><a href="#cb6-15"></a>$ <span class="ex">open</span> test.html</span></code></pre></div>
+</section>
+<section class="slide level2">
+
+</section></section>
+<section><section id="markdown" class="title-slide slide level1"><h1>MarkDown</h1><p>Marckdown es un formato fichero texto simple, este nos permitirá traducirlo a formato presentación.</p></section>
+<section id="marckdown-headers" class="slide level2">
+<h2>MarckDown : Headers</h2>
+<p>ATX-style</p>
+<pre><code>### Header 3 **Bold** [link](/url)
+
+#### Header 4
+
+##### Header 5
+
+&lt;smaller&gt;Texto Pequeño con Smaller&lt;/smaller&gt;
+</code></pre>
+<p>Setext-style</p>
+<pre><code>Header1
+=================
+
+Header2
+__________________
+</code></pre>
+</section>
+<section id="marckdown-ejemplos-headers" class="slide level2">
+<h2>MarckDown : Ejemplos Headers</h2>
+<h3 id="header-3-bold-link">Header 3 <strong>Bold</strong> <a href="/url">link</a></h3>
+<h4 id="header-4-bold-link">Header 4 <strong>Bold</strong> <a href="/url">link</a></h4>
+<h5 id="header-5-bold-link">Header 5 <strong>Bold</strong> <a href="/url">link</a></h5>
+<p><smaller>Texto Pequeño con Smaller</smaller></p>
+</section>
+<section id="marckdown-listas" class="slide level2">
+<h2>MarckDown : Listas</h2>
+<p>Listas Numeradas</p>
+<pre><code>1. Opción 1
+1. Opción 2
+    5. Sub Opcion 1
+    1. Sub Opcion</code></pre>
+<p>Lista Bullet</p>
+<pre><code> * Opcion1
+   - Opción 1.1
+ * Opción2</code></pre>
+</section>
+<section id="marckdown-ejemplo-listas" class="slide level2">
+<h2>MarckDown : Ejemplo Listas</h2>
+<p>Lista Numeradas</p>
+<ol type="1">
+<li>Opción 1</li>
+<li>Opción 2
+<ol start="5" type="1">
+<li>Sub Opcion 1</li>
+<li>Sub Opcion</li>
+</ol></li>
+</ol>
+<p>Lista Bullet</p>
+<ul>
+<li>Opcion1
+<ul>
+<li>Opción 1.1</li>
+</ul></li>
+<li>Opción2</li>
+</ul>
+</section>
+<section id="bloque-código" class="slide level2">
+<h2>Bloque Código</h2>
+<p>Los bloques de código pueden realizarse con la notación MarckDown o bien empezar la línea con ‘&gt;’</p>
+<pre><code>&gt; Ejemplo
+&gt; Ejemplo 2
+</code></pre>
+<p>Ejemplo Bloque</p>
+<blockquote>
+<p>This is a block quote. This paragraph has two lines.</p>
+<ol type="1">
+<li>This is a list inside a block quote.</li>
+<li>Second item.</li>
+</ol>
+</blockquote>
+</section></section>
+<section><section id="reveal.js-themes" class="title-slide slide level1"><h1>Reveal.js Themes</h1><p>Cambiar el tema se hace vía comando</p></section>
+<section id="cambio-tema-por-defecto" class="slide level2">
+<h2 class="unnumbered">Cambio Tema por defecto</h2>
+<p>En la línea de comando se puede especificar el comando usando camviando el valor del a variable theme -v/–variable</p>
+<pre><code>pandoc -s -t revealjs  \
+  --variable transition=linear \
+  --variable theme=black \
+  --variable revealjs-url=&quot;../reveal.js&quot; \
+  --slide-level=${SLIDE_LEVEL} \
+  -o markdown/reveal.html \
+  markdown/revealjs.md</code></pre>
+</section>
+<section id="lista-de-temas-disponibles" class="slide level2">
+<h2 class="unnumbered">Lista de temas disponibles</h2>
+<pre><code>➜  reveal.js git:(master) ✗ tree
+.
+├── CONTRIBUTING.md
+├── LICENSE
+├── README.md
+├── bower.json
+├── css
+│   ├── print
+│   │   ├── paper.css
+│   │   └── pdf.css
+│   ├── reset.css
+│   ├── reveal.css
+│   ├── reveal.scss
+│   └── theme
+│       ├── README.md
+│       ├── beige.css
+│       ├── black.css
+│       ├── blood.css
+│       ├── jmms.css
+│       ├── league.css
+│       ├── moon.css
+│       ├── night.css
+│       ├── serif.css
+│       ├── simple.css
+│       ├── sky.css
+│       ├── solarized.css
+│       ├── source
+│       │   ├── beige.scss
+│       │   ├── black.scss
+│       │   ├── blood.scss</code></pre>
+</section>
+<section id="personalización-de-fuente" class="slide level2">
+<h2 class="unnumbered">Personalización de Fuente</h2>
+<ul>
+<li>Para cambiar la fuente por defecto, editar la css del tema.</li>
+</ul>
+<div class="sourceCode" id="cb14"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb14-1"><a href="#cb14-1"></a><span class="fu">.reveal</span> {</span>
+<span id="cb14-2"><a href="#cb14-2"></a>  <span class="kw">font-family</span>: <span class="st">&quot;Source Sans Pro&quot;</span><span class="op">,</span> Helvetica<span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span></span>
+<span id="cb14-3"><a href="#cb14-3"></a>  <span class="kw">font-size</span>: <span class="dv">30</span><span class="dt">px</span><span class="op">;</span></span>
+<span id="cb14-4"><a href="#cb14-4"></a>  <span class="kw">color</span>: <span class="cn">#222</span><span class="op">;</span> }</span></code></pre></div>
+<ul>
+<li>Se puede modificar el estilo y tamaño de las cabeceras</li>
+</ul>
+<div class="sourceCode" id="cb15"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb15-1"><a href="#cb15-1"></a><span class="fu">.reveal</span> h1<span class="op">,</span></span>
+<span id="cb15-2"><a href="#cb15-2"></a><span class="fu">.reveal</span> h6 {</span>
+<span id="cb15-3"><a href="#cb15-3"></a>  <span class="kw">margin</span>: <span class="dv">0</span> <span class="dv">0</span> <span class="dv">20</span><span class="dt">px</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb15-4"><a href="#cb15-4"></a>  <span class="kw">color</span>: <span class="cn">#222</span><span class="op">;</span></span>
+<span id="cb15-5"><a href="#cb15-5"></a>  <span class="kw">font-family</span>: Calibri<span class="op">,</span> Candara<span class="op">,</span> Segoe<span class="op">,</span> <span class="st">&quot;Segoe UI&quot;</span><span class="op">,</span> Optima<span class="op">,</span> Arial<span class="op">,</span> <span class="dv">sans-serif</span><span class="op">;</span>}</span>
+<span id="cb15-6"><a href="#cb15-6"></a></span>
+<span id="cb15-7"><a href="#cb15-7"></a><span class="fu">.reveal</span> h1 {</span>
+<span id="cb15-8"><a href="#cb15-8"></a>  <span class="kw">font-size</span>: <span class="dv">1.7</span><span class="dt">em</span><span class="op">;</span></span>
+<span id="cb15-9"><a href="#cb15-9"></a>  <span class="kw">color</span>: <span class="cn">#FF0000</span><span class="op">;</span></span>
+<span id="cb15-10"><a href="#cb15-10"></a>  <span class="kw">text-transform</span>: <span class="dv">uppercase</span><span class="op">;</span> }</span></code></pre></div>
+</section></section>
+<section><section id="extensiones" class="title-slide slide level1"><h1>Extensiones</h1></section>
+<section id="emojis" class="slide level2">
+<h2>emojis</h2>
+<p>Para los emojis neceistamos activar su extensión</p>
+<p><span class="emoji" data-emoji="smile">😄</span> <span class="emoji" data-emoji="penguin">🐧</span></p>
+<p><a href="https://gist.github.com/rxaviers/7360908">Lista de emojis</a></p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode bash"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1"></a><span class="bu">export</span> <span class="va">FROM=</span>markdown+emoji</span>
+<span id="cb16-2"><a href="#cb16-2"></a><span class="ex">pandoc</span> -s --from <span class="va">${FROM}</span> \</span>
+<span id="cb16-3"><a href="#cb16-3"></a>  -t revealjs  \</span>
+<span id="cb16-4"><a href="#cb16-4"></a>  -V transition=<span class="va">${TRANSITION}</span> \</span>
+<span id="cb16-5"><a href="#cb16-5"></a>  -V theme=<span class="va">${THEME}</span> \</span>
+<span id="cb16-6"><a href="#cb16-6"></a>  -V revealjs-url=<span class="st">&quot;../reveal.js&quot;</span> \</span>
+<span id="cb16-7"><a href="#cb16-7"></a>  -V center=true \</span>
+<span id="cb16-8"><a href="#cb16-8"></a>  --slide-level=<span class="va">${SLIDE_LEVEL}</span> \</span>
+<span id="cb16-9"><a href="#cb16-9"></a>  -o markdown/reveal.html \</span>
+<span id="cb16-10"><a href="#cb16-10"></a>  markdown/revealjs.md</span></code></pre></div>
+</section></section>
+<section id="referencias-1" class="title-slide slide level1"><h1>Referencias</h1><ul>
+<li><a href="https://revealjs.com/#/">Reveal.js</a> presentation framework</li>
+<li><a href="https://github.com/hakimel/reveal.js">Reveal.js on GitHub</a>.</li>
+<li><a href="https://pandoc.org/">Pandoc</a> document converter</li>
+<li><a href="https://dev.to/berry_clione/install-homebrew-on-macos-mojave-4m3m">Instalación HomeBrew</a></li>
+<li><a href="https://bookdown.org/yihui/rmarkdown/revealjs.html">BookDown Presentaciones Reveal</a></li>
+<li><a href="https://en.wikipedia.org/wiki/Web-based_slideshow">Slides en HTML</a></li>
+</ul></section>
+    </div>
+  </div>
+
+  <script src="../reveal.js/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Push each slide change to the browser history
+        history: true,
+        // Vertical centering of slides
+        center: true,
+        // Transition style
+        transition: 'linear', // none/fade/slide/convex/concave/zoom
+
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: '../reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: '../reveal.js/plugin/zoom-js/zoom.js', async: true },
+          { src: '../reveal.js/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
